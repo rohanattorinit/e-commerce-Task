@@ -1,10 +1,10 @@
 import axios from "axios";
 const getProducts = async () => {
   try {
-    const res = axios.get("https://fakestoreapi.com/products/1");
-    return await res;
+    const res = await axios.get("https://fakestoreapi.com/products/1");
+    return { data: res.data, status: "success" };
   } catch (error) {
-    console.error(error);
+    return error;
   }
 };
 
