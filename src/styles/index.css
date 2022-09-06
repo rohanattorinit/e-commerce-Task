@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg-color: #e5e9f0;
+  --text-primary: #2e3440;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav {
+  color: var(--text-primary);
+}
